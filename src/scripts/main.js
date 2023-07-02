@@ -1,7 +1,7 @@
 AOS.init();
 
 
-const dataDoEvento = new Date('Jul 8, 2023 19:00:00')//criando a data do evento
+const dataDoEvento = new Date('Jul 08, 2023 19:00:00')//criando a data do evento
 const timeStampDoEvento = dataDoEvento.getTime();//pegando quanto tempo em milesegundos até a data do evento
 
 const contaAsHoras = setInterval(function () {//configurando uma contagem de tempo de 1 em 1 segundo
@@ -16,6 +16,8 @@ const contaAsHoras = setInterval(function () {//configurando uma contagem de tem
 
 
     const distanciaAteOEvento = timeStampDoEvento - timeStampAtual; //calculando quantos milesegundos faltam até o evento
+    console.log(distanciaAteOEvento);
+
 
     const diasAteOEvento = Math.floor(distanciaAteOEvento / (1000 * 60 * 60 * 24));//calculando quantos dias até o evento
 
@@ -31,8 +33,8 @@ const contaAsHoras = setInterval(function () {//configurando uma contagem de tem
 
 
     if (distanciaAteOEvento < 0) {
-        clearInterval(contaAsHoras)
-        document.getElementById('contador').innerHTML = 'Evento expirado'
+        clearInterval(contaAsHoras);
+        document.getElementById('contador').innerHTML = 'Evento expirado';
     }
 
 
