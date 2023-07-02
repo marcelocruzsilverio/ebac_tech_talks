@@ -1,7 +1,7 @@
 AOS.init();
 
 
-const dataDoEvento = new Date('Jul 1, 2023 18:00:00')//criando a data do evento
+const dataDoEvento = new Date('Jul 8, 2023 19:00:00')//criando a data do evento
 const timeStampDoEvento = dataDoEvento.getTime();//pegando quanto tempo em milesegundos até a data do evento
 
 const contaAsHoras = setInterval(function () {//configurando uma contagem de tempo de 1 em 1 segundo
